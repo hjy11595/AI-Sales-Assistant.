@@ -1,28 +1,30 @@
-# متطور لتقدير أسعار تأجير السيارات الفاخرة AI نموذج 
-# مخصص لـ hjy11595 - خبير مبيعات وتسويق
+# Luxury Car Sales & Market Analyzer v1.0
+# Developed by: Hussein Younes (hjy11595)
+# Expertise: 8.5+ Years in Sales & Marketing (LIU Graduate)
 
-def calculate_luxury_price(model, days, is_vip=False):
-    prices = {
-        "lamborghini": 4000,
-        "ferrari": 3800,
-        "rolls_royce": 4500,
-        "mercedes_g63": 2500
-    }
+def analyze_car_deal(car_model, price, demand_level):
+    """
+    تحليل احتمالية نجاح الصفقة بناءً على خبرة حسين الميدانية
+    """
+    print(f"--- Analyzing Deal for: {car_model} ---")
     
-    # السعر الأساسي
-    base_rate = prices.get(model.lower(), 1500)
-    total = base_rate * days
+    # خوارزمية بسيطة لتقييم الصفقة (Lead Scoring)
+    score = 0
+    if demand_level.lower() == "high":
+        score += 50
+    if price < 500000: # مثال لسعر سيارة فاخرة
+        score += 30
+    else:
+        score += 15
+        
+    print(f"Market Success Probability: {score}%")
     
-    # خصم ذكي للسيلز: إذا كانت المدة أكثر من 5 أيام
-    if days > 5:
-        total *= 0.85  # خصم 15%
-        
-    # معاملة الـ VIP (إضافة تسويقية)
-    if is_vip:
-        total *= 0.95  # خصم إضافي للـ VIP
-        
-    return f"Car: {model.upper()} | Quote for {days} days: {total} AED/QAR"
+    if score > 70:
+        return "Recommendation: HIGH PRIORITY - Close the deal immediately!"
+    else:
+        return "Recommendation: Follow up with marketing automation."
 
-# تجربة الكود لعميل VIP يريد استئجار لامبورجيني لمدة 7 أيام
-print(calculate_luxury_price("lamborghini", 7, is_vip=True))
+# تجربة الأداة
+result = analyze_car_deal("Lamborghini Huracan", 450000, "high")
+print(result)
 
