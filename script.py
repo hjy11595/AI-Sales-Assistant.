@@ -1,30 +1,20 @@
-# Luxury Car Sales & Market Analyzer v1.0
-# Developed by: Hussein Younes (hjy11595)
-# Expertise: 8.5+ Years in Sales & Marketing (LIU Graduate)
+# General Sales & Marketing Opportunity Analyzer
+# Hussein Younes | 8.5+ Years Experience | Marketing Graduate (LIU)
 
-def analyze_car_deal(car_model, price, demand_level):
+def analyze_job_offer(company_rank, salary_package, industry):
     """
-    تحليل احتمالية نجاح الصفقة بناءً على خبرة حسين الميدانية
+    تقييم العرض الوظيفي بناءً على معايير حسين المهنية
     """
-    print(f"--- Analyzing Deal for: {car_model} ---")
-    
-    # خوارزمية بسيطة لتقييم الصفقة (Lead Scoring)
     score = 0
-    if demand_level.lower() == "high":
-        score += 50
-    if price < 500000: # مثال لسعر سيارة فاخرة
-        score += 30
-    else:
-        score += 15
-        
-    print(f"Market Success Probability: {score}%")
+    if company_rank == "Top Tier": score += 40
+    if salary_package == "Strong": score += 40
     
-    if score > 70:
-        return "Recommendation: HIGH PRIORITY - Close the deal immediately!"
+    print(f"Analyzing offer from {industry} sector...")
+    
+    if score >= 80:
+        return "Verdict: Strong Opportunity. Apply immediately!"
     else:
-        return "Recommendation: Follow up with marketing automation."
+        return "Verdict: Evaluate based on long-term career growth."
 
-# تجربة الأداة
-result = analyze_car_deal("Lamborghini Huracan", 450000, "high")
-print(result)
-
+# تجربة الكود لقطاعات مختلفة (عقارات، تكنولوجيا، سيارات)
+print(analyze_job_offer("Top Tier", "Strong", "Real Estate/Retail"))
