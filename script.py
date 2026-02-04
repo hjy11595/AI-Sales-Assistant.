@@ -1,20 +1,18 @@
-# General Sales & Marketing Opportunity Analyzer
-# Hussein Younes | 8.5+ Years Experience | Marketing Graduate (LIU)
+# Hussein Younes | GitHub: hjy-95
+# AI-Enhanced Sales Portfolio v5.5
 
-def analyze_job_offer(company_rank, salary_package, industry):
-    """
-    تقييم العرض الوظيفي بناءً على معايير حسين المهنية
-    """
-    score = 0
-    if company_rank == "Top Tier": score += 40
-    if salary_package == "Strong": score += 40
+def my_professional_journey():
+    # توثيق الخبرات العملية كما هي في الواقع
+    experience = {
+        "Total Sales Experience": "8.5 Years", #
+        "Luxury Car Expertise": "4 Years", #
+        "Current Focus": "AI Business Automation (Freelance)", #
+        "Academic Background": "Marketing Degree from LIU" #
+    }
     
-    print(f"Analyzing offer from {industry} sector...")
-    
-    if score >= 80:
-        return "Verdict: Strong Opportunity. Apply immediately!"
-    else:
-        return "Verdict: Evaluate based on long-term career growth."
+    print("--- Loading Hussein's Professional Experience ---")
+    for key, value in experience.items():
+        print(f"{key}: {value}")
 
-# تجربة الكود لقطاعات مختلفة (عقارات، تكنولوجيا، سيارات)
-print(analyze_job_offer("Top Tier", "Strong", "Real Estate/Retail"))
+my_professional_journey()
+
