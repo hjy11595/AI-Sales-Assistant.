@@ -1,5 +1,5 @@
 # Hussein Younes | GitHub: hjy-95
-# AI-Enhanced Sales Portfolio v5.5
+# AI-Enhanced Sales Portfolio v5.0
 
 def my_professional_journey():
     # توثيق الخبرات العملية كما هي في الواقع
@@ -15,4 +15,5 @@ def my_professional_journey():
         print(f"{key}: {value}")
 
 my_professional_journey()
+
 
