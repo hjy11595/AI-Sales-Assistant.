@@ -1,4 +1,4 @@
-# AI-Sales-Assistant
+
 # 🤖 AI Sales & Lead Qualification Assistant
 This project demonstrates my ability to integrate **AI Automation** into the sales funnel. 
 
